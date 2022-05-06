@@ -1,0 +1,41 @@
+.slideimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    position: relative;
+    overflow: hidden;
+    margin: 3vh 1vw;
+    width: 96.76vw;
+}
+.slideimg img {
+    width: 97.18vw;
+    height: 300px;
+    animation: pic 15s ease-in-out 2s infinite alternate;
+    cursor: pointer;
+}
+@keyframes pic {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-194.36vw)
+    }
+}
+.button1, .button2 {
+    position: absolute;
+    height: 6.4em;
+    width: 53px;
+    background-color: white;
+    padding-top: 28px;
+    text-align: center;
+    border-radius: 4px;
+    top: 6.7em;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+.button1 .material-icons, .button2 .material-icons {
+    font-size: 43px;
+}
+.button2 {
+    right: 0;
+}

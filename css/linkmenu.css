@@ -1,0 +1,86 @@
+.linkmenu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: white;
+}
+.linkmenu div {
+    cursor: pointer;
+}
+.linkmenu div:hover {
+    color: #2874f0;
+}
+.linkmenu .fashion, .electronics, .home, .appliances, .toys {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.linkmenu ul {
+    list-style: none;
+}
+.dropdown2, .dropdown3, .dropdown4, .dropdown5, .dropdown6 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    text-align: left;
+    z-index: 1;
+}
+.linkmenu li {
+    width: 15vw;
+    font-size: 17px;
+    margin: 16px;
+    padding: 13px;
+}
+.dropdown6 {
+    right: 3px;
+}
+.linkmenu li:hover {
+    background-color: #e3e5e7;
+    color: #2874f0;
+}
+.fashion:hover .dropdown2{
+    display: block;
+}
+.electronics:hover .dropdown3 {
+    display: block;
+}
+.home:hover .dropdown4 {
+    display: block;
+}
+.appliances:hover .dropdown5 {
+    display: block;
+}
+.toys:hover .dropdown6 {
+    display: block;
+}
+@media screen and (max-width: 702px){
+    .linkmenu {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        text-align: center;
+        flex-direction: row;
+        overflow: auto;
+    }
+    .appliances {
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown6 {
+        right: 0;
+    }
+    .dropdown2, .dropdown3, .dropdown4, .dropdown5 {
+        left: 0;
+    }
+    .linkmenu li {
+        width: 32vw;
+    }
+}
